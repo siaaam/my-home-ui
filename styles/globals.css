@@ -1,9 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Roboto Mono', monospace;
+  scroll-behavior: smooth;
+  line-height: 160%;
+
+  /* colors */
+  --background: #0f0e17;
+  --headline: #fffffe;
+  --paragraph: #a7a9be;
+  --btn: #ff8906;
+  --btn-text: #fffffe;
+  --stroke: black;
+  --main: #fffffe;
+  --highlight: #ff8906;
+  --secondary: #f25f4c;
+  --tertiary: #e53170;
+
+  /* font */
+  --fs: 'Roboto Mono';
 }
 
 a {
@@ -11,16 +29,63 @@ a {
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
+h2 {
+  font-size: 1.5rem;
+  color: var(--headline);
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+h3 {
+  font-size: 1.2rem;
+  color: var(--headline);
+}
+
+li {
+  list-style-type: none;
+}
+
+p {
+  color: var(--paragraph);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.leftbarWrapper {
+  width: 20%;
+}
+
+.rightbarWrapper {
+  width: 80%;
+}
+
+.layout {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.leftbar {
+  background: #353535;
+  position: fixed;
+  height: 100vh;
+  width: 20%;
+  padding: 1.5rem;
+}
+
+.navbar {
+  background: #353535;
+  padding: 10px;
+  position: fixed;
+  z-index: 111;
+  width: 80%;
+  height: 80px;
+}
+
+.content {
+  margin-top: 80px;
+  background: var(--background);
+  color: var(--paragraph);
+  padding: 0px 20px 100px 30px;
 }
