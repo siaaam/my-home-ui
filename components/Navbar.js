@@ -6,9 +6,7 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <StyledNav>
-        <div>
-          <img src="/logo.png" alt="" />
-        </div>
+        <div>{/* <img src="/logo3.png" alt="" /> */}</div>
         <ul>
           <Link href="/">Home</Link>
           <Link href="/projects">Projects</Link>

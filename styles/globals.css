@@ -31,12 +31,10 @@ a {
 
 h2 {
   font-size: 1.5rem;
-  color: var(--headline);
 }
 
 h3 {
   font-size: 1.2rem;
-  color: var(--headline);
 }
 
 li {
@@ -68,6 +66,7 @@ p {
 
 .leftbar {
   background: #353535;
+  /* background: rgba(11, 11, 11, 0.951); */
   position: fixed;
   height: 100vh;
   width: 20%;
@@ -76,6 +75,7 @@ p {
 
 .navbar {
   background: #353535;
+  /* background: rgba(11, 11, 11, 0.951); */
   padding: 10px;
   position: fixed;
   z-index: 111;
@@ -88,4 +88,8 @@ p {
   background: var(--background);
   color: var(--paragraph);
   padding: 0px 20px 100px 30px;
+}
+
+.active {
+  color: #e53170;
 }

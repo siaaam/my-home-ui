@@ -1,32 +1,19 @@
 import styled from 'styled-components';
 
 export const StyledProjects = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-
+  display: flex;
+  flex-direction: column;
   a {
     padding: 10px;
   }
 `;
-
-export const ProjectCardWrapper = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  row-gap: 40px;
-  width: 70vw;
-  position: relative;
-  top: 100px;
-  padding-bottom: 100px;
-`;
-
 export const Tab = styled.div`
-  grid-column: 1/-1;
-  margin-bottom: 60px;
+  flex: 1;
   position: fixed;
+  width: 100%;
+  padding: 30px 0;
   z-index: 999;
   background: var(--background);
-  width: 100%;
-  padding: 20px 0px;
 
   a {
     transition: all 0.2s ease-in;
@@ -37,13 +24,26 @@ export const Tab = styled.div`
   }
 `;
 
+export const ProjectCardWrapper = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  width: 70vw;
+  /* position: relative; */
+  margin-top: 100px;
+  padding-bottom: 100px;
+`;
+
 export const ProjectCard = styled.div`
   /* border: 2px solid var(--stroke); */
   border-radius: 8px;
   box-shadow: 1px 1px 1px 1px rgba(255, 255, 255, 0.2);
-  margin: 10px;
-  flex: auto;
+  /* margin: 10px; */
+  /* width: 40%; */
   background: var(--main);
+  padding: 20px;
 
   h2 {
     color: var(--background);
@@ -69,6 +69,7 @@ export const ProjectCard = styled.div`
     cursor: pointer;
     transition: all 0.2s ease;
     border-radius: 0 0 8px 8px;
+    color: white;
 
     &:hover {
       background: var(--secondary);

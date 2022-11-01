@@ -3,16 +3,18 @@ import styled from 'styled-components';
 export const StyledHome = styled.div`
   height: calc(100vh - 140px);
   display: flex;
-  gap: 20px;
+  padding: 0 10rem;
+
   /* align-items: flex-start; */
   justify-content: space-between;
-  border-radius: 8px;
+
   align-items: center;
 `;
 
 export const Description = styled.div`
   flex: 1;
   padding: 20px;
+  margin-right: 2rem;
   h2 {
     margin-bottom: 20px;
 
@@ -31,6 +33,7 @@ export const Description = styled.div`
     color: var(--btn-text);
     height: 3.5rem;
     font-family: var(--fs);
+    font-size: 1.2rem;
     transition: all 0.2s ease-in;
     font-weight: 500;
     border-radius: 8px;
