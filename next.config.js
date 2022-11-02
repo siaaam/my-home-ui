@@ -6,6 +6,10 @@ const nextConfig = {
     // Enables the styled-components SWC transform
     styledComponents: true,
   },
+
+  images: {
+    domains: ['images.unsplash.com'],
+  },
 };
 
 module.exports = nextConfig;
