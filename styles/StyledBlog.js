@@ -45,6 +45,12 @@ export const BlogCard = styled.div`
   margin: 1rem 2rem 1rem 0;
 `;
 
+export const ImageWrapper = styled.div`
+  img {
+    border-radius: 8px;
+  }
+`;
+
 export const BlogContent = styled.div`
   padding: 0 1rem 0 2rem;
 
